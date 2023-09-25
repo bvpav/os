@@ -78,10 +78,10 @@
 - Не е нужно да са последователни
 - Linux и macOS използват POSIX API
 
-| ОС      | Заделяне адресно пространство  | Обвързване АП с памет        |
-| ------- | ------------------------------ | ---------------------------- | ------------------------ |
-| POSIX   | `p=mmap(PROT_NONE, MAP_PRIVATE | MAP_ANONYOMUS)`              | `mprotect(p,PROT_WRITE)` |
-| Windows | `p=VirtualAlloc(MEM_RESERVE)`  | `VirtualAlloc(p,MEM_COMMIT)` |
+| ОС      | Заделяне адресно пространство                   | Обвързване АП с памет        |
+| ------- | ----------------------------------------------- | ---------------------------- |
+| POSIX   | `p=mmap(PROT_NONE, MAP_PRIVATE\|MAP_ANONYOMUS)` | `mprotect(p,PROT_WRITE)`     |
+| Windows | `p=VirtualAlloc(MEM_RESERVE)`                   | `VirtualAlloc(p,MEM_COMMIT)` |
 
 ### Примерен код:
 
