@@ -2,4 +2,4 @@
 
 ## Презентации
 
-1. [./01_operacionni_sistemi.md](Операционни системи)
+1. [Операционни системи](./01_operacionni_sistemi.md)

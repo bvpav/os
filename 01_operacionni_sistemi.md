@@ -54,10 +54,11 @@
 - Физическото адресното пространство е достъпно на процесора при изключено стартиране <!-- страниране?? -->
 - Контролера на паметта може да поставя (мапва) памет от външните устройства на адреси във физическото адресно пространство
 
-| Източник | Връзка | Особености | Достъп |
-| RAM | Директна | Малка, бърза | Чрез адресното пространство |
-| Блокова | PCIe, SATA, M.2 | Голяма, бавна | Заявки чрез регистър, DMA, прекъсвания |
-| Външни устройства | PCIe | Средна | Чрез адресното пространство |
+| Източник          | Връзка          | Особености    | Достъп                                 |
+| ----------------- | --------------- | ------------- | -------------------------------------- |
+| RAM               | Директна        | Малка, бърза  | Чрез адресното пространство            |
+| Блокова           | PCIe, SATA, M.2 | Голяма, бавна | Заявки чрез регистър, DMA, прекъсвания |
+| Външни устройства | PCIe            | Средна        | Чрез адресното пространство            |
 
 ## Виртуална памет
 
@@ -84,23 +85,23 @@
 
 ### Примерен код:
 
-- [./adresno_prostranstvo/posix/mem.c](POSIX)
+- [POSIX](./adresno_prostranstvo/posix/mem.c)
 - Win32 (TODO...)
 
 ### Документация:
 
 **`mmap()`:**
 
-- [https://man7.org/linux/man-pages/man3/mmap.3p.html](<mmap(3p)>) - _POSIX Programmer's Manual_
-- [https://man7.org/linux/man-pages/man2/mmap.2.html](<mmap(2)>) - _Linux Syscalls Manual_
-- [https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/mmap.2.html](<mmap(2)>) - _Mac OS X, BSD System Calls Manual_
+- [mmap(3p)](https://man7.org/linux/man-pages/man3/mmap.3p.html) - _POSIX Programmer's Manual_
+- [mmap(2)](https://man7.org/linux/man-pages/man2/mmap.2.html) - _Linux Syscalls Manual_
+- [mmap(2)](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/mmap.2.html) - _Mac OS X, BSD System Calls Manual_
 
 **`mprotect()`:**
 
-- [https://man7.org/linux/man-pages/man3/mprotect.3p.html](<mprotect(3p)>) - _POSIX Programmer's Manual_
-- [https://man7.org/linux/man-pages/man2/mprotect.2.html](<mprotect(2)>) - _Linux Syscalls Manual_
-- [https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/mprotect.2.html](<mprotect(2)>) - _Mac OS X, BSD System Calls Manual_
+- [mprotect(3p)](https://man7.org/linux/man-pages/man3/mprotect.3p.html) - _POSIX Programmer's Manual_
+- [mprotect(2)](https://man7.org/linux/man-pages/man2/mprotect.2.html) - _Linux Syscalls Manual_
+- [mprotect(2)](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/mprotect.2.html) - _Mac OS X, BSD System Calls Manual_
 
 **`VirtualAlloc()`:**
 
-- [https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc](VirtualAlloc function (memoryapi.h) - _Win32 API reference documentation_
+- [VirtualAlloc function (memoryapi.h)](https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc) - _Win32 API reference documentation_
