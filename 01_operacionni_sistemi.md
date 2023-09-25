@@ -90,18 +90,18 @@
 
 ### Документация:
 
-**`mmap()`:**
+#### **`mmap()`:**
 
 - [mmap(3p)](https://man7.org/linux/man-pages/man3/mmap.3p.html) - _POSIX Programmer's Manual_
 - [mmap(2)](https://man7.org/linux/man-pages/man2/mmap.2.html) - _Linux Syscalls Manual_
 - [mmap(2)](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/mmap.2.html) - _Mac OS X, BSD System Calls Manual_
 
-**`mprotect()`:**
+#### **`mprotect()`:**
 
 - [mprotect(3p)](https://man7.org/linux/man-pages/man3/mprotect.3p.html) - _POSIX Programmer's Manual_
 - [mprotect(2)](https://man7.org/linux/man-pages/man2/mprotect.2.html) - _Linux Syscalls Manual_
 - [mprotect(2)](https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/mprotect.2.html) - _Mac OS X, BSD System Calls Manual_
 
-**`VirtualAlloc()`:**
+#### **`VirtualAlloc()`:**
 
 - [VirtualAlloc function (memoryapi.h)](https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc) - _Win32 API reference documentation_
